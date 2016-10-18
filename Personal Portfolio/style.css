@@ -2,9 +2,7 @@ body {
 	padding-top: 70px;
 }
 
-/*img {
-	padding-left: 10px;
-}*/
+
 /* This is to stop the welcome container being overlaid by the navbr */
 .welcome-pg {
 	margin-top: 40px;
@@ -12,6 +10,7 @@ body {
 /* This is to ensure the body of the text aligns with the picture when is desktop mode */
 .welcome-txt {
 	padding-top: 70px;
+	display: inline-table;
 }
 
 p{
@@ -24,6 +23,9 @@ p{
   animation: type 4s steps(60, end); 
 }
 
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
 /* Different animations had to be implented for each <p> element to ensure that the type texting effect occurred line by line */
 
 p:nth-child(2){
