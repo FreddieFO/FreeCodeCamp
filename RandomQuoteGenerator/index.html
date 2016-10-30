@@ -3,16 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="..FreeCodeCamp/Random Quote Generator/style.css">
-	<title> Quote Me </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,500">
+
+
+	<title> Quote Generator </title>
 </head>
 <body>
-	<h1> Random Quote Generator</h1>
-	<div id="quoteDisplay"> 
+	<div class="container-fluid">
+		<h1> Random Quote Generator</h1>
+		<div class="row">
+			<blockquote>
+				<p id="quoteDisplay"> First, solve the problem. Then, write the code</p>
+				<strong><footer id="authorDisplay">John Johnson</footer></strong>
+			</blockquote>
+		</div>
 
+		<div class="row buttons">
+			<a id='tweetLink' href="" class="btn"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+			<button type="button" id="getQuote" class="btn">Get Quote</button>
+		</div>
 	</div>
-	<button onclick="newQuote()">Show me more!</button>
-
-	<script src="javascript.js" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript.js" ></script>
 </body>
 </html>
